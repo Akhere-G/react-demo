@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "category": "chores",
+    "title": "Buy groceries",
+    "description": "Buy groceries to make chicken fajitas",
+    "dueDate": "12/28/2025"
+  },
+  {
+    "id": 2,
+    "category": "work",
+    "title": "Quarterly Report",
+    "description": "Finish the Q4 financial summary for the board meeting",
+    "dueDate": "01/05/2026"
+  },
+  {
+    "id": 3,
+    "category": "health",
+    "title": "Dentist Appointment",
+    "description": "Routine cleaning and checkup at Downtown Dental",
+    "dueDate": "01/12/2026"
+  },
+  {
+    "id": 4,
+    "category": "chores",
+    "title": "Oil Change",
+    "description": "Take the car to the shop for synthetic oil change",
+    "dueDate": "01/15/2026"
+  },
+  {
+    "id": 5,
+    "category": "personal",
+    "title": "Book Flight",
+    "description": "Book tickets for the summer vacation to Italy",
+    "dueDate": "01/20/2026"
+  },
+  {
+    "id": 6,
+    "category": "work",
+    "title": "Code Review",
+    "description": "Review the pull requests for the new login feature",
+    "dueDate": "01/02/2026"
+  },
+  {
+    "id": 7,
+    "category": "chores",
+    "title": "Clean Garage",
+    "description": "Organize tools and donate old camping gear",
+    "dueDate": "01/10/2026"
+  },
+  {
+    "id": 8,
+    "category": "health",
+    "title": "Gym Session",
+    "description": "Leg day and 20 minutes of cardio",
+    "dueDate": "01/01/2026"
+  },
+  {
+    "id": 9,
+    "category": "personal",
+    "title": "Read Chapter 5",
+    "description": "Finish reading the React documentation on Hooks",
+    "dueDate": "01/03/2026"
+  },
+  {
+    "id": 10,
+    "category": "work",
+    "title": "Client Pitch",
+    "description": "Prepare the slide deck for the New Media account",
+    "dueDate": "01/08/2026"
+  },
+  {
+    "id": 11,
+    "category": "chores",
+    "title": "Laundry",
+    "description": "Wash bedding and bath towels",
+    "dueDate": "01/04/2026"
+  },
+  {
+    "id": 12,
+    "category": "health",
+    "title": "Meal Prep",
+    "description": "Prepare salads and protein for the work week",
+    "dueDate": "01/04/2026"
+  },
+  {
+    "id": 13,
+    "category": "personal",
+    "title": "Call Mom",
+    "description": "Catch up and wish her a Happy New Year",
+    "dueDate": "01/01/2026"
+  },
+  {
+    "id": 14,
+    "category": "work",
+    "title": "Update Resume",
+    "description": "Add recent projects and skills to LinkedIn profile",
+    "dueDate": "01/15/2026"
+  },
+  {
+    "id": 15,
+    "category": "chores",
+    "title": "Pay Rent",
+    "description": "Send the monthly payment via the tenant portal",
+    "dueDate": "01/01/2026"
+  },
+  {
+    "id": 16,
+    "category": "personal",
+    "title": "Fix Leaky Faucet",
+    "description": "Buy a new washer and repair the kitchen sink",
+    "dueDate": "01/07/2026"
+  },
+  {
+    "id": 17,
+    "category": "health",
+    "title": "Yoga Class",
+    "description": "Attend the 6:00 PM Vinyasa session",
+    "dueDate": "01/06/2026"
+  },
+  {
+    "id": 18,
+    "category": "work",
+    "title": "Staff Meeting",
+    "description": "Weekly sync-up with the marketing team",
+    "dueDate": "01/05/2026"
+  },
+  {
+    "id": 19,
+    "category": "chores",
+    "title": "Gardening",
+    "description": "Prune the rose bushes and weed the front bed",
+    "dueDate": "01/11/2026"
+  },
+  {
+    "id": 20,
+    "category": "personal",
+    "title": "Renew Passport",
+    "description": "Fill out form DS-82 and get a new photo taken",
+    "dueDate": "01/30/2026"
+  }
+]
