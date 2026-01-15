@@ -1,142 +1,502 @@
 [
   {
     "id": 1,
-    "category": "chores",
+    "category": "Chores",
+    "isComplete": false,
     "title": "Buy groceries",
-    "description": "Buy groceries to make chicken fajitas",
-    "dueDate": "12/28/2025"
+    "description": "Visit the local farmer's market to pick up fresh bell peppers, onions, and cilantro.\nThen stop by the butcher for two pounds of chicken breast.\nEnsure all spices like cumin and paprika are stocked for the fajitas.",
+    "dueDate": "12/28/2025",
+    "estimatedMinutes": 60,
+    "tags": ["Shopping", "Cooking", "Home"]
   },
   {
     "id": 2,
-    "category": "work",
+    "category": "Work",
+    "isComplete": true,
     "title": "Quarterly Report",
-    "description": "Finish the Q4 financial summary for the board meeting",
-    "dueDate": "01/05/2026"
+    "description": "Compile the financial data from the last three months including overhead and revenue.\nCreate visual charts to represent the growth in the tech sector.\nDraft the executive summary for the board of directors' review next week.",
+    "dueDate": "01/05/2026",
+    "estimatedMinutes": 180,
+    "tags": ["Finance", "Reporting", "Admin"]
   },
   {
     "id": 3,
-    "category": "health",
+    "category": "Health",
+    "isComplete": false,
     "title": "Dentist Appointment",
-    "description": "Routine cleaning and checkup at Downtown Dental",
-    "dueDate": "01/12/2026"
+    "description": "Head to Downtown Dental for the bi-annual cleaning and X-ray session.\nDiscuss the sensitivity issues with the upper molars with Dr. Smith.\nSchedule the follow-up appointment for the minor cavity filling identified last time.",
+    "dueDate": "01/12/2026",
+    "estimatedMinutes": 45,
+    "tags": ["Medical", "Self-Care"]
   },
   {
     "id": 4,
-    "category": "chores",
+    "category": "Chores",
+    "isComplete": false,
     "title": "Oil Change",
-    "description": "Take the car to the shop for synthetic oil change",
-    "dueDate": "01/15/2026"
+    "description": "Drive the SUV to the service center for a full synthetic oil and filter replacement.\nAsk the mechanic to check the brake pads and rotate the tires while it is on the lift.\nRefill the windshield wiper fluid and check the battery health for the winter.",
+    "dueDate": "01/15/2026",
+    "estimatedMinutes": 90,
+    "tags": ["Car", "Maintenance"]
   },
   {
     "id": 5,
-    "category": "personal",
+    "category": "Personal",
+    "isComplete": false,
     "title": "Book Flight",
-    "description": "Book tickets for the summer vacation to Italy",
-    "dueDate": "01/20/2026"
+    "description": "Compare prices between major airlines for a round-trip ticket to Rome.\nCheck baggage policies and layover times to ensure a comfortable travel schedule.\nConfirm the passport expiration date before finalizing the purchase through the portal.",
+    "dueDate": "01/20/2026",
+    "estimatedMinutes": 30,
+    "tags": ["Travel", "Planning"]
   },
   {
     "id": 6,
-    "category": "work",
+    "category": "Work",
+    "isComplete": true,
     "title": "Code Review",
-    "description": "Review the pull requests for the new login feature",
-    "dueDate": "01/02/2026"
+    "description": "Go through the 'feature/auth-provider' branch on GitHub and check for logic flaws.\nEnsure that the new environment variables are properly documented in the README.\nLeave comments regarding the redundant utility functions in the login component.",
+    "dueDate": "01/02/2026",
+    "estimatedMinutes": 40,
+    "tags": ["Development", "GitHub", "Team"]
   },
   {
     "id": 7,
-    "category": "chores",
+    "category": "Chores",
+    "isComplete": false,
     "title": "Clean Garage",
-    "description": "Organize tools and donate old camping gear",
-    "dueDate": "01/10/2026"
+    "description": "Sweep out the dust and cobwebs accumulated over the autumn months.\nSort through the old camping equipment and set aside items for the donation center.\nOrganize the power tools on the new pegboard and label the storage bins clearly.",
+    "dueDate": "01/10/2026",
+    "estimatedMinutes": 120,
+    "tags": ["Home", "Cleaning", "Organization"]
   },
   {
     "id": 8,
-    "category": "health",
+    "category": "Health",
+    "isComplete": true,
     "title": "Gym Session",
-    "description": "Leg day and 20 minutes of cardio",
-    "dueDate": "01/01/2026"
+    "description": "Perform a heavy compound lifting session focusing on squats and deadlifts.\nFollow up with three sets of lunges and calf raises to complete the leg day routine.\nFinish with 20 minutes of moderate-intensity cardio on the rowing machine.",
+    "dueDate": "01/01/2026",
+    "estimatedMinutes": 75,
+    "tags": ["Fitness", "Leg-Day", "Workout"]
   },
   {
     "id": 9,
-    "category": "personal",
+    "category": "Personal",
+    "isComplete": false,
     "title": "Read Chapter 5",
-    "description": "Finish reading the React documentation on Hooks",
-    "dueDate": "01/03/2026"
+    "description": "Focus on the advanced patterns of React Hooks, specifically useMemo and useCallback.\nTake detailed notes on how to prevent unnecessary re-renders in large lists.\nTry to implement the examples in a local sandbox environment to solidify understanding.",
+    "dueDate": "01/03/2026",
+    "estimatedMinutes": 50,
+    "tags": ["Education", "React", "Coding"]
   },
   {
     "id": 10,
-    "category": "work",
+    "category": "Work",
+    "isComplete": false,
     "title": "Client Pitch",
-    "description": "Prepare the slide deck for the New Media account",
-    "dueDate": "01/08/2026"
+    "description": "Refine the value proposition slides to highlight the 20% increase in user engagement.\nPractice the verbal presentation to ensure the timing stays under fifteen minutes.\nPrepare a printed handout summarizing the projected ROI for the New Media account.",
+    "dueDate": "01/08/2026",
+    "estimatedMinutes": 60,
+    "tags": ["Marketing", "Sales", "Presentation"]
   },
   {
     "id": 11,
-    "category": "chores",
+    "category": "Chores",
+    "isComplete": true,
     "title": "Laundry",
-    "description": "Wash bedding and bath towels",
-    "dueDate": "01/04/2026"
+    "description": "Strip the master bedroom sheets and run them through a hot water cycle.\nWash the delicate bath towels separately and use the low-heat dryer setting.\nFold all items immediately to prevent wrinkling and put them away in the linen closet.",
+    "dueDate": "01/04/2026",
+    "estimatedMinutes": 45,
+    "tags": ["Cleaning", "Routine"]
   },
   {
     "id": 12,
-    "category": "health",
+    "category": "Health",
+    "isComplete": false,
     "title": "Meal Prep",
-    "description": "Prepare salads and protein for the work week",
-    "dueDate": "01/04/2026"
+    "description": "Grill six servings of lemon-herb chicken breast for the upcoming work week lunches.\nSteam a large batch of broccoli and roast sweet potatoes in the oven.\nDivide the portions into airtight containers and label them with the date of preparation.",
+    "dueDate": "01/04/2026",
+    "estimatedMinutes": 90,
+    "tags": ["Nutrition", "Cooking", "Health"]
   },
   {
     "id": 13,
-    "category": "personal",
+    "category": "Personal",
+    "isComplete": true,
     "title": "Call Mom",
-    "description": "Catch up and wish her a Happy New Year",
-    "dueDate": "01/01/2026"
+    "description": "Set aside an hour in the evening to have a proper catch-up conversation.\nDiscuss the plans for the upcoming family reunion in the late spring.\nShare the recent updates about the new job and the move to the city.",
+    "dueDate": "01/01/2026",
+    "estimatedMinutes": 60,
+    "tags": ["Family", "Social"]
   },
   {
     "id": 14,
-    "category": "work",
+    "category": "Work",
+    "isComplete": false,
     "title": "Update Resume",
-    "description": "Add recent projects and skills to LinkedIn profile",
-    "dueDate": "01/15/2026"
+    "description": "Review the last two years of projects and extract key performance metrics.\nRewrite the summary section to reflect the shift toward Lead Developer roles.\nUpdate the technical skills list to include TypeScript, Next.js, and AWS architecture.",
+    "dueDate": "01/15/2026",
+    "estimatedMinutes": 120,
+    "tags": ["Career", "Admin"]
   },
   {
     "id": 15,
-    "category": "chores",
+    "category": "Chores",
+    "isComplete": true,
     "title": "Pay Rent",
-    "description": "Send the monthly payment via the tenant portal",
-    "dueDate": "01/01/2026"
+    "description": "Log into the resident portal and verify the total balance including utilities.\nInitiate the ACH transfer from the checking account to the management company.\nSave a digital copy of the transaction receipt in the 'Finances 2026' folder.",
+    "dueDate": "01/01/2026",
+    "estimatedMinutes": 15,
+    "tags": ["Finance", "Adulting"]
   },
   {
     "id": 16,
-    "category": "personal",
+    "category": "Personal",
+    "isComplete": false,
     "title": "Fix Leaky Faucet",
-    "description": "Buy a new washer and repair the kitchen sink",
-    "dueDate": "01/07/2026"
+    "description": "Watch a tutorial on how to disassemble the specific faucet brand in the kitchen.\nVisit the hardware store to purchase the correct size rubber washers and plumber's tape.\nShut off the main water valve and replace the worn-out internal components.",
+    "dueDate": "01/07/2026",
+    "estimatedMinutes": 45,
+    "tags": ["DIY", "Home-Repair"]
   },
   {
     "id": 17,
-    "category": "health",
+    "category": "Health",
+    "isComplete": false,
     "title": "Yoga Class",
-    "description": "Attend the 6:00 PM Vinyasa session",
-    "dueDate": "01/06/2026"
+    "description": "Join the intermediate Vinyasa flow class at the local community center.\nFocus on breathing techniques and improving flexibility in the hamstrings and back.\nStay for the ten-minute guided meditation session at the end of the physical practice.",
+    "dueDate": "01/06/2026",
+    "estimatedMinutes": 70,
+    "tags": ["Fitness", "Mental-Health"]
   },
   {
     "id": 18,
-    "category": "work",
+    "category": "Work",
+    "isComplete": true,
     "title": "Staff Meeting",
-    "description": "Weekly sync-up with the marketing team",
-    "dueDate": "01/05/2026"
+    "description": "Attend the weekly sync-up to discuss the progress of the current marketing campaign.\nPresent the findings from the A/B testing performed on the landing page last week.\nTake notes on the upcoming deadlines for the holiday sales push.",
+    "dueDate": "01/05/2026",
+    "estimatedMinutes": 60,
+    "tags": ["Meeting", "Team"]
   },
   {
     "id": 19,
-    "category": "chores",
+    "category": "Chores",
+    "isComplete": false,
     "title": "Gardening",
-    "description": "Prune the rose bushes and weed the front bed",
-    "dueDate": "01/11/2026"
+    "description": "Trim the dead branches from the rose bushes to encourage new growth in the spring.\nApply a layer of organic mulch to the flower beds to protect against the frost.\nClear out the weeds from the vegetable patch and prepare the soil for planting.",
+    "dueDate": "01/11/2026",
+    "estimatedMinutes": 100,
+    "tags": ["Outdoors", "Home"]
   },
   {
     "id": 20,
-    "category": "personal",
+    "category": "Personal",
+    "isComplete": false,
     "title": "Renew Passport",
-    "description": "Fill out form DS-82 and get a new photo taken",
-    "dueDate": "01/30/2026"
+    "description": "Download and print the DS-82 renewal form from the official government website.\nGo to the local pharmacy to have professional passport photos taken and printed.\nMail the application via certified mail with the required fee and the old passport book.",
+    "dueDate": "01/30/2026",
+    "estimatedMinutes": 40,
+    "tags": ["Travel", "Admin", "Urgent"]
+  },
+  {
+    "id": 21,
+    "category": "Work",
+    "isComplete": false,
+    "title": "Fix UI Bugs",
+    "description": "Identify the cause of the alignment issue on the mobile navigation bar.\nFix the color contrast on the primary call-to-action buttons for accessibility.\nTest the fixes across Chrome, Safari, and Firefox browsers.",
+    "dueDate": "01/18/2026",
+    "estimatedMinutes": 120,
+    "tags": ["Development", "Design", "QA"]
+  },
+  {
+    "id": 22,
+    "category": "Health",
+    "isComplete": false,
+    "title": "Eye Exam",
+    "description": "Visit the optometrist to check the current prescription for contact lenses.\nBrowse the new selection of frames for a backup pair of glasses.\nDiscuss the digital eye strain symptoms experienced during long work days.",
+    "dueDate": "02/05/2026",
+    "estimatedMinutes": 45,
+    "tags": ["Medical", "Vision"]
+  },
+  {
+    "id": 23,
+    "category": "Chores",
+    "isComplete": true,
+    "title": "Wash Windows",
+    "description": "Clean the exterior and interior glass surfaces of all living room windows.\nUse a squeegee and microfiber cloth to ensure a streak-free finish.\nWipe down the sills and frames to remove accumulated dust and pollen.",
+    "dueDate": "01/03/2026",
+    "estimatedMinutes": 75,
+    "tags": ["Cleaning", "Home"]
+  },
+  {
+    "id": 24,
+    "category": "Personal",
+    "isComplete": false,
+    "title": "Learn Guitar",
+    "description": "Practice the basic open chords: G, C, D, and Em for thirty minutes.\nWork on the transition speed between the C major and G major shapes.\nWatch a tutorial on basic strumming patterns for folk music.",
+    "dueDate": "01/22/2026",
+    "estimatedMinutes": 45,
+    "tags": ["Hobby", "Music", "Creative"]
+  },
+  {
+    "id": 25,
+    "category": "Work",
+    "isComplete": false,
+    "title": "Write Blog Post",
+    "description": "Draft a 1,000-word article on the benefits of serverless architecture.\nInclude code snippets demonstrating a basic AWS Lambda function setup.\nOptimize the headings and metadata for search engine performance.",
+    "dueDate": "01/25/2026",
+    "estimatedMinutes": 150,
+    "tags": ["Content", "Marketing", "Tech"]
+  },
+  {
+    "id": 26,
+    "category": "Health",
+    "isComplete": false,
+    "title": "Hiking Trip",
+    "description": "Pack a day bag with water, protein bars, and a basic first aid kit.\nDrive to the Blue Ridge trailhead for a six-mile loop through the forest.\nWear moisture-wicking layers and broken-in hiking boots for comfort.",
+    "dueDate": "01/17/2026",
+    "estimatedMinutes": 240,
+    "tags": ["Fitness", "Nature", "Outdoors"]
+  },
+  {
+    "id": 27,
+    "category": "Chores",
+    "isComplete": false,
+    "title": "Organize Pantry",
+    "description": "Check the expiration dates on all canned goods and dry pantry items.\nGroup similar items together in clear storage bins for better visibility.\nCreate a list of staples that need to be replenished during the next grocery run.",
+    "dueDate": "01/28/2026",
+    "estimatedMinutes": 60,
+    "tags": ["Kitchen", "Organization"]
+  },
+  {
+    "id": 28,
+    "category": "Personal",
+    "isComplete": true,
+    "title": "Family Photos",
+    "description": "Upload the digital photos from the holiday season to a cloud storage service.\nSelect the best ten shots to be printed and framed for the hallway gallery.\nOrder a custom photo book as a gift for the grandparents' anniversary.",
+    "dueDate": "01/10/2026",
+    "estimatedMinutes": 90,
+    "tags": ["Memories", "Family"]
+  },
+  {
+    "id": 29,
+    "category": "Work",
+    "isComplete": false,
+    "title": "Database Backup",
+    "description": "Run a manual backup of the production database before the scheduled maintenance.\nVerify the integrity of the backup file by restoring it to a staging environment.\nUpdate the internal documentation with the latest backup timestamps.",
+    "dueDate": "01/19/2026",
+    "estimatedMinutes": 30,
+    "tags": ["Security", "Data", "Maintenance"]
+  },
+  {
+    "id": 30,
+    "category": "Health",
+    "isComplete": false,
+    "title": "Meditation",
+    "description": "Spend fifteen minutes in a quiet space practicing mindful breathing techniques.\nUse a guided meditation app to focus on reducing stress and mental clutter.\nRecord a few sentences in a journal about the current state of mind afterward.",
+    "dueDate": "01/16/2026",
+    "estimatedMinutes": 20,
+    "tags": ["Wellness", "Mental-Health"]
+  },
+  {
+    "id": 31,
+    "category": "Chores",
+    "isComplete": false,
+    "title": "Car Wash",
+    "description": "Vacuum the interior carpets and wipe down the dashboard and door panels.\nWash the exterior with a high-quality soap and dry with a chamois cloth.\nApply a coat of protective wax to the paint to prevent winter salt damage.",
+    "dueDate": "01/21/2026",
+    "estimatedMinutes": 60,
+    "tags": ["Car", "Maintenance"]
+  },
+  {
+    "id": 32,
+    "category": "Personal",
+    "isComplete": false,
+    "title": "Paint Bedroom",
+    "description": "Move all furniture to the center of the room and cover with drop cloths.\nPatch any small holes in the drywall and sand them down for a smooth finish.\nApply two coats of 'Midnight Blue' paint to the main accent wall.",
+    "dueDate": "02/10/2026",
+    "estimatedMinutes": 300,
+    "tags": ["DIY", "Home"]
+  },
+  {
+    "id": 33,
+    "category": "Work",
+    "isComplete": true,
+    "title": "Design Sprint",
+    "description": "Collaborate with the UX team to prototype the new user onboarding flow.\nConduct three rapid user testing sessions to identify friction points.\nIterate on the wireframes based on the feedback received from the participants.",
+    "dueDate": "01/12/2026",
+    "estimatedMinutes": 240,
+    "tags": ["Design", "UX", "Product"]
+  },
+  {
+    "id": 34,
+    "category": "Health",
+    "isComplete": false,
+    "title": "Blood Work",
+    "description": "Fast for twelve hours prior to the laboratory appointment for accurate results.\nProvide samples for a full metabolic panel and cholesterol check.\nReview the results with the primary care physician during the next visit.",
+    "dueDate": "01/24/2026",
+    "estimatedMinutes": 45,
+    "tags": ["Medical", "Labs"]
+  },
+  {
+    "id": 35,
+    "category": "Chores",
+    "isComplete": false,
+    "title": "Shovel Snow",
+    "description": "Clear the accumulated snow from the driveway and the front sidewalk.\nApply a layer of rock salt to prevent ice from forming on the walking paths.\nClear the area around the mailbox to ensure the mail carrier has easy access.",
+    "dueDate": "01/17/2026",
+    "estimatedMinutes": 45,
+    "tags": ["Winter", "Home", "Outdoors"]
+  },
+  {
+    "id": 36,
+    "category": "Personal",
+    "isComplete": false,
+    "title": "Volunteer",
+    "description": "Spend four hours at the local food bank sorting through donated canned goods.\nPack boxes with essential items for distribution to families in the community.\nHelp clean the warehouse floor at the end of the volunteer shift.",
+    "dueDate": "01/31/2026",
+    "estimatedMinutes": 240,
+    "tags": ["Community", "Social"]
+  },
+  {
+    "id": 37,
+    "category": "Work",
+    "isComplete": false,
+    "title": "Security Audit",
+    "description": "Review the access logs for the main server to look for unauthorized entry attempts.\nUpdate all administrative passwords to meet the new complexity requirements.\nEnsure that the SSL certificates for all subdomains are valid and up to date.",
+    "dueDate": "02/01/2026",
+    "estimatedMinutes": 120,
+    "tags": ["Security", "Tech", "IT"]
+  },
+  {
+    "id": 38,
+    "category": "Health",
+    "isComplete": true,
+    "title": "Swimming",
+    "description": "Visit the local aquatic center for a thirty-minute lap swimming session.\nFocus on improving the freestyle stroke and bilateral breathing technique.\nComplete four sets of five-minute intervals at a high intensity.",
+    "dueDate": "01/09/2026",
+    "estimatedMinutes": 60,
+    "tags": ["Fitness", "Cardio"]
+  },
+  {
+    "id": 39,
+    "category": "Chores",
+    "isComplete": false,
+    "title": "Dust Bookshelves",
+    "description": "Remove all books from the shelves and wipe down the surfaces with wood polish.\nSort the books by genre or author before replacing them on the shelves.\nIdentify any titles that can be donated to the local library branch.",
+    "dueDate": "01/29/2026",
+    "estimatedMinutes": 90,
+    "tags": ["Cleaning", "Organization"]
+  },
+  {
+    "id": 40,
+    "category": "Personal",
+    "isComplete": false,
+    "title": "Pottery Class",
+    "description": "Attend a two-hour workshop focusing on the basics of wheel-throwing techniques.\nPractice centering the clay and pulling up the walls to create a simple bowl.\nSelect a glaze color for the pieces that will be fired in the kiln next week.",
+    "dueDate": "02/02/2026",
+    "estimatedMinutes": 150,
+    "tags": ["Hobby", "Creative", "Art"]
+  },
+  {
+    "id": 41,
+    "category": "Work",
+    "isComplete": false,
+    "title": "Market Research",
+    "description": "Analyze the competitor's latest product release and identify key features.\nGather user feedback from social media and forums regarding the new trends.\nSummarize the findings in a three-page report for the product development team.",
+    "dueDate": "02/08/2026",
+    "estimatedMinutes": 180,
+    "tags": ["Research", "Business", "Product"]
+  },
+  {
+    "id": 42,
+    "category": "Health",
+    "isComplete": false,
+    "title": "Skin Check",
+    "description": "Visit the dermatologist for a full-body screening of moles and freckles.\nDiscuss any changes in skin texture or appearance noticed over the last year.\nGet recommendations for a daily sunscreen routine for the upcoming summer.",
+    "dueDate": "02/15/2026",
+    "estimatedMinutes": 30,
+    "tags": ["Medical", "Skincare"]
+  },
+  {
+    "id": 43,
+    "category": "Chores",
+    "isComplete": true,
+    "title": "Clean Oven",
+    "description": "Apply a specialized oven cleaner to the interior surfaces and let it sit for two hours.\nScrub away the burnt-on grease and food particles with a heavy-duty sponge.\nWipe down the exterior glass and handles with a degreasing agent.",
+    "dueDate": "01/06/2026",
+    "estimatedMinutes": 150,
+    "tags": ["Kitchen", "Cleaning"]
+  },
+  {
+    "id": 44,
+    "category": "Personal",
+    "isComplete": false,
+    "title": "Backup Laptop",
+    "description": "Connect the external hard drive and run a full system image backup.\nCopy essential documents and photos to a secondary cloud storage provider.\nOrganize the 'Downloads' folder and delete any unnecessary large files.",
+    "dueDate": "01/23/2026",
+    "estimatedMinutes": 60,
+    "tags": ["Tech", "Organization"]
+  },
+  {
+    "id": 45,
+    "category": "Work",
+    "isComplete": false,
+    "title": "Refactor API",
+    "description": "Identify the endpoints that are experiencing high latency and optimize the queries.\nImplement a caching layer for the most frequently accessed data objects.\nUpdate the API documentation to reflect the changes in the response structure.",
+    "dueDate": "02/12/2026",
+    "estimatedMinutes": 240,
+    "tags": ["Development", "Backend", "Optimization"]
+  },
+  {
+    "id": 46,
+    "category": "Health",
+    "isComplete": false,
+    "title": "Sleep Hygiene",
+    "description": "Establish a consistent bedtime routine that includes turning off screens an hour early.\nInvest in a set of blackout curtains to improve the quality of deep sleep.\nTrack sleep patterns for a week using a wearable device or a mobile app.",
+    "dueDate": "01/19/2026",
+    "estimatedMinutes": 20,
+    "tags": ["Wellness", "Health"]
+  },
+  {
+    "id": 47,
+    "category": "Chores",
+    "isComplete": false,
+    "title": "Service HVAC",
+    "description": "Schedule an appointment with a technician to inspect the furnace and AC unit.\nReplace the air filters with high-efficiency pleated models for better air quality.\nVacuum out the dust from the vents and registers throughout the house.",
+    "dueDate": "02/20/2026",
+    "estimatedMinutes": 90,
+    "tags": ["Home", "Maintenance"]
+  },
+  {
+    "id": 48,
+    "category": "Personal",
+    "isComplete": true,
+    "title": "Visit Museum",
+    "description": "Spend the afternoon at the Modern Art Museum exploring the new photography exhibit.\nAttend a short lecture on the influence of digital technology on contemporary art.\nPurchase a print from the gift shop for the living room gallery wall.",
+    "dueDate": "01/11/2026",
+    "estimatedMinutes": 180,
+    "tags": ["Culture", "Art", "Leisure"]
+  },
+  {
+    "id": 49,
+    "category": "Work",
+    "isComplete": false,
+    "title": "Onboard New Hire",
+    "description": "Set up the new developer's workstation and install all necessary software tools.\nConduct a walkthrough of the codebase and the current sprint objectives.\nIntroduce the new team member to the key stakeholders during the afternoon coffee break.",
+    "dueDate": "02/03/2026",
+    "estimatedMinutes": 120,
+    "tags": ["Team", "HR", "Management"]
+  },
+  {
+    "id": 50,
+    "category": "Health",
+    "isComplete": false,
+    "title": "Fruit Intake",
+    "description": "Prepare a large bowl of seasonal fruit salad to keep in the refrigerator for snacks.\nIncorporate at least two servings of berries or citrus into the daily breakfast.\nResearch the benefits of different antioxidant-rich fruits for general health.",
+    "dueDate": "01/16/2026",
+    "estimatedMinutes": 30,
+    "tags": ["Nutrition", "Health"]
   }
 ]
