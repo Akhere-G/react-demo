@@ -1,5 +1,6 @@
 import { useState } from "react"
 import "./Contact.css"
+import InputField from "../../components/InputField"
 
 export default function Contact(){
     const [formState, setFormState] = useState({
@@ -57,9 +58,9 @@ export default function Contact(){
         })
 
         setFormState({
-        name: "",
-        email: "", 
-        message: ""
+            name: "",
+            email: "", 
+            message: ""
         })
         alert("Success")
     }
@@ -74,16 +75,29 @@ export default function Contact(){
     <div>
         <h1>Contact</h1>
         <form className="form" >
-            <label>Name</label>
-            <input value={formState.name} name="name" onChange={handleChange} />
-            {errorMessages.name && <p className="errorMessage">{errorMessages.name}</p>}
-            <label>Email</label>
-            <input value={formState.email} name="email" onChange={handleChange} />
-            {errorMessages.email && <p className="errorMessage">{errorMessages.email}</p>}
-            <label>Message</label>
-            <textarea value={formState.message} name="message" onChange={handleChange}/>
-            {errorMessages.message && <p className="errorMessage">{errorMessages.message}</p>}
+            <InputField 
+                title="name" 
+                value={formState.name} 
+                name="name" 
+                handleChange={handleChange} 
+                errorMessage={errorMessages.name} 
+            />
+            <InputField 
+                title="Email" 
+                value={formState.email} 
+                name="email" 
+                handleChange={handleChange} 
+                errorMessage={errorMessages.email} 
+            />
+            <InputField 
+                title="Message" 
+                value={formState.message} 
+                name="message" 
+                handleChange={handleChange} 
+                errorMessage={errorMessages.message} 
+            />
             <button onClick={handleSubmit}>Send Query</button>
+            
         </form>
     </div>
     )
