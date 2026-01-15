@@ -2,9 +2,11 @@ import { useState } from "react"
 import "./Contact.css"
 
 export default function Contact(){
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [message, setMessage] = useState("")
+    const [formState, setFormState] = useState({
+        name: "",
+        email: "", 
+        message: ""
+    })
     const [errorMessages, setErrorMessages] = useState({
         name: "",
         email: "",
@@ -44,20 +46,28 @@ export default function Contact(){
 
     function handleSubmit(e){
         e.preventDefault()
-        if (validate({name, email, message})){
+        if (validate(formState)){
             return
         }
 
         fetch("http://localhost:5000/contact", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name: name, email: email, message: message })
+            body: JSON.stringify(formState)
         })
 
-        setName("")
-        setEmail("")
-        setMessage("")
+        setFormState({
+        name: "",
+        email: "", 
+        message: ""
+        })
         alert("Success")
+    }
+
+    function handleChange(e) {
+        const newState = {...formState, [e.target.name] : e.target.value }
+        setFormState(newState)
+        validate(newState)
     }
 
     return (
@@ -65,13 +75,13 @@ export default function Contact(){
         <h1>Contact</h1>
         <form className="form" >
             <label>Name</label>
-            <input value={name} onChange={e => {setName(e.target.value); validate({name: e.target.value, email, message }) }} />
+            <input value={formState.name} name="name" onChange={handleChange} />
             {errorMessages.name && <p className="errorMessage">{errorMessages.name}</p>}
             <label>Email</label>
-            <input value={email} onChange={e => {setEmail(e.target.value); validate({name, email: e.target.value, message })}} />
+            <input value={formState.email} name="email" onChange={handleChange} />
             {errorMessages.email && <p className="errorMessage">{errorMessages.email}</p>}
             <label>Message</label>
-            <textarea value={message} onChange={e => {setMessage(e.target.value); validate({name, email, message: e.target.value })}}/>
+            <textarea value={formState.message} name="message" onChange={handleChange}/>
             {errorMessages.message && <p className="errorMessage">{errorMessages.message}</p>}
             <button onClick={handleSubmit}>Send Query</button>
         </form>
