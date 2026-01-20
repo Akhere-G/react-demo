@@ -9,7 +9,10 @@ export default function Todos() {
 
   useEffect(() => {
     async function fetchTodos(){
-      setTodos(fetchedTodos)
+      const response = await fetch("http://localhost:8080/api/todos")
+      const data = await response.json()
+      console.log("todos", data.data)
+      setTodos(data.data)
       setIsloading(false)
     }
     fetchTodos()
@@ -27,7 +30,7 @@ export default function Todos() {
   return (
     <div>
         <h1>Todo</h1>
-        <div className='todoList'>
+        <div className='todo-list'>
           {todos.map(todo => <Todo key={todo.id} {...todo}/>)}
         </div>
 

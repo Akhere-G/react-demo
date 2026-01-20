@@ -5,9 +5,9 @@
     "isComplete": false,
     "title": "Buy groceries",
     "description": "Visit the local farmer's market to pick up fresh bell peppers, onions, and cilantro.\nThen stop by the butcher for two pounds of chicken breast.\nEnsure all spices like cumin and paprika are stocked for the fajitas.",
-    "dueDate": "12/28/2025",
+    "dueDate": "2025-12-28",
     "estimatedMinutes": 60,
-    "tags": ["Shopping", "Cooking", "Home"]
+    "tags": ["Shopping", "Home", "Nutrition", "Self-Care", "Maintenance"]
   },
   {
     "id": 2,
@@ -15,9 +15,9 @@
     "isComplete": true,
     "title": "Quarterly Report",
     "description": "Compile the financial data from the last three months including overhead and revenue.\nCreate visual charts to represent the growth in the tech sector.\nDraft the executive summary for the board of directors' review next week.",
-    "dueDate": "01/05/2026",
+    "dueDate": "2026-01-05",
     "estimatedMinutes": 180,
-    "tags": ["Finance", "Reporting", "Admin"]
+    "tags": ["Finance", "Admin", "Reporting", "Team", "Work"]
   },
   {
     "id": 3,
@@ -25,29 +25,29 @@
     "isComplete": false,
     "title": "Dentist Appointment",
     "description": "Head to Downtown Dental for the bi-annual cleaning and X-ray session.\nDiscuss the sensitivity issues with the upper molars with Dr. Smith.\nSchedule the follow-up appointment for the minor cavity filling identified last time.",
-    "dueDate": "01/12/2026",
+    "dueDate": "2026-01-12",
     "estimatedMinutes": 45,
-    "tags": ["Medical", "Self-Care"]
+    "tags": ["Medical", "Self-Care", "Health", "Wellness", "Planning"]
   },
   {
     "id": 4,
     "category": "Chores",
     "isComplete": false,
     "title": "Oil Change",
-    "description": "Drive the SUV to the service center for a full synthetic oil and filter replacement.\nAsk the mechanic to check the brake pads and rotate the tires while it is on the lift.\nRefill the windshield wiper fluid and check the battery health for the winter.",
-    "dueDate": "01/15/2026",
+    "description": "Drive the SUV to the service centre for a full synthetic oil and filter replacement.\nAsk the mechanic to check the brake pads and rotate the tyres while it is on the lift.\nRefill the windshield wiper fluid and check the battery health for the winter.",
+    "dueDate": "2026-01-15",
     "estimatedMinutes": 90,
-    "tags": ["Car", "Maintenance"]
+    "tags": ["Maintenance", "Car", "Travel", "Home", "Planning"]
   },
   {
     "id": 5,
     "category": "Personal",
     "isComplete": false,
     "title": "Book Flight",
-    "description": "Compare prices between major airlines for a round-trip ticket to Rome.\nCheck baggage policies and layover times to ensure a comfortable travel schedule.\nConfirm the passport expiration date before finalizing the purchase through the portal.",
-    "dueDate": "01/20/2026",
+    "description": "Compare prices between major airlines for a round-trip ticket to Rome.\nCheck baggage policies and layover times to ensure a comfortable travel schedule.\nConfirm the passport expiration date before finalising the purchase through the portal.",
+    "dueDate": "2026-01-20",
     "estimatedMinutes": 30,
-    "tags": ["Travel", "Planning"]
+    "tags": ["Travel", "Planning", "Finance", "Admin", "Self-Care"]
   },
   {
     "id": 6,
@@ -55,19 +55,19 @@
     "isComplete": true,
     "title": "Code Review",
     "description": "Go through the 'feature/auth-provider' branch on GitHub and check for logic flaws.\nEnsure that the new environment variables are properly documented in the README.\nLeave comments regarding the redundant utility functions in the login component.",
-    "dueDate": "01/02/2026",
+    "dueDate": "2026-01-02",
     "estimatedMinutes": 40,
-    "tags": ["Development", "GitHub", "Team"]
+    "tags": ["Development", "Team", "Admin", "Education", "Quality"]
   },
   {
     "id": 7,
     "category": "Chores",
     "isComplete": false,
     "title": "Clean Garage",
-    "description": "Sweep out the dust and cobwebs accumulated over the autumn months.\nSort through the old camping equipment and set aside items for the donation center.\nOrganize the power tools on the new pegboard and label the storage bins clearly.",
-    "dueDate": "01/10/2026",
+    "description": "Sweep out the dust and cobwebs accumulated over the autumn months.\nSort through the old camping equipment and set aside items for the donation centre.\nOrganise the power tools on the new pegboard and label the storage bins clearly.",
+    "dueDate": "2026-01-10",
     "estimatedMinutes": 120,
-    "tags": ["Home", "Cleaning", "Organization"]
+    "tags": ["Home", "Cleaning", "Organisation", "Maintenance", "DIY"]
   },
   {
     "id": 8,
@@ -75,9 +75,9 @@
     "isComplete": true,
     "title": "Gym Session",
     "description": "Perform a heavy compound lifting session focusing on squats and deadlifts.\nFollow up with three sets of lunges and calf raises to complete the leg day routine.\nFinish with 20 minutes of moderate-intensity cardio on the rowing machine.",
-    "dueDate": "01/01/2026",
+    "dueDate": "2026-01-01",
     "estimatedMinutes": 75,
-    "tags": ["Fitness", "Leg-Day", "Workout"]
+    "tags": ["Fitness", "Health", "Self-Care", "Wellness", "Routine"]
   },
   {
     "id": 9,
@@ -85,19 +85,19 @@
     "isComplete": false,
     "title": "Read Chapter 5",
     "description": "Focus on the advanced patterns of React Hooks, specifically useMemo and useCallback.\nTake detailed notes on how to prevent unnecessary re-renders in large lists.\nTry to implement the examples in a local sandbox environment to solidify understanding.",
-    "dueDate": "01/03/2026",
+    "dueDate": "2026-01-03",
     "estimatedMinutes": 50,
-    "tags": ["Education", "React", "Coding"]
+    "tags": ["Education", "Development", "Self-Improvement", "Admin", "Research"]
   },
   {
     "id": 10,
     "category": "Work",
     "isComplete": false,
     "title": "Client Pitch",
-    "description": "Refine the value proposition slides to highlight the 20% increase in user engagement.\nPractice the verbal presentation to ensure the timing stays under fifteen minutes.\nPrepare a printed handout summarizing the projected ROI for the New Media account.",
-    "dueDate": "01/08/2026",
+    "description": "Refine the value proposition slides to highlight the 20% increase in user engagement.\nPractice the verbal presentation to ensure the timing stays under fifteen minutes.\nPrepare a printed handout summarising the projected ROI for the New Media account.",
+    "dueDate": "2026-01-08",
     "estimatedMinutes": 60,
-    "tags": ["Marketing", "Sales", "Presentation"]
+    "tags": ["Marketing", "Sales", "Presentation", "Work", "Communication"]
   },
   {
     "id": 11,
@@ -105,9 +105,9 @@
     "isComplete": true,
     "title": "Laundry",
     "description": "Strip the master bedroom sheets and run them through a hot water cycle.\nWash the delicate bath towels separately and use the low-heat dryer setting.\nFold all items immediately to prevent wrinkling and put them away in the linen closet.",
-    "dueDate": "01/04/2026",
+    "dueDate": "2026-01-04",
     "estimatedMinutes": 45,
-    "tags": ["Cleaning", "Routine"]
+    "tags": ["Cleaning", "Home", "Routine", "Self-Care", "Maintenance"]
   },
   {
     "id": 12,
@@ -115,9 +115,9 @@
     "isComplete": false,
     "title": "Meal Prep",
     "description": "Grill six servings of lemon-herb chicken breast for the upcoming work week lunches.\nSteam a large batch of broccoli and roast sweet potatoes in the oven.\nDivide the portions into airtight containers and label them with the date of preparation.",
-    "dueDate": "01/04/2026",
+    "dueDate": "2026-01-04",
     "estimatedMinutes": 90,
-    "tags": ["Nutrition", "Cooking", "Health"]
+    "tags": ["Nutrition", "Self-Care", "Cooking", "Health", "Planning", "Home"]
   },
   {
     "id": 13,
@@ -125,9 +125,9 @@
     "isComplete": true,
     "title": "Call Mom",
     "description": "Set aside an hour in the evening to have a proper catch-up conversation.\nDiscuss the plans for the upcoming family reunion in the late spring.\nShare the recent updates about the new job and the move to the city.",
-    "dueDate": "01/01/2026",
+    "dueDate": "2026-01-01",
     "estimatedMinutes": 60,
-    "tags": ["Family", "Social"]
+    "tags": ["Social", "Family", "Self-Care", "Communication", "Planning"]
   },
   {
     "id": 14,
@@ -135,9 +135,9 @@
     "isComplete": false,
     "title": "Update Resume",
     "description": "Review the last two years of projects and extract key performance metrics.\nRewrite the summary section to reflect the shift toward Lead Developer roles.\nUpdate the technical skills list to include TypeScript, Next.js, and AWS architecture.",
-    "dueDate": "01/15/2026",
+    "dueDate": "2026-01-15",
     "estimatedMinutes": 120,
-    "tags": ["Career", "Admin"]
+    "tags": ["Career", "Admin", "Development", "Planning", "Self-Improvement"]
   },
   {
     "id": 15,
@@ -145,9 +145,9 @@
     "isComplete": true,
     "title": "Pay Rent",
     "description": "Log into the resident portal and verify the total balance including utilities.\nInitiate the ACH transfer from the checking account to the management company.\nSave a digital copy of the transaction receipt in the 'Finances 2026' folder.",
-    "dueDate": "01/01/2026",
+    "dueDate": "2026-01-01",
     "estimatedMinutes": 15,
-    "tags": ["Finance", "Adulting"]
+    "tags": ["Finance", "Home", "Admin", "Routine", "Legal"]
   },
   {
     "id": 16,
@@ -155,19 +155,19 @@
     "isComplete": false,
     "title": "Fix Leaky Faucet",
     "description": "Watch a tutorial on how to disassemble the specific faucet brand in the kitchen.\nVisit the hardware store to purchase the correct size rubber washers and plumber's tape.\nShut off the main water valve and replace the worn-out internal components.",
-    "dueDate": "01/07/2026",
+    "dueDate": "2026-01-07",
     "estimatedMinutes": 45,
-    "tags": ["DIY", "Home-Repair"]
+    "tags": ["DIY", "Maintenance", "Home", "Repair", "Education"]
   },
   {
     "id": 17,
     "category": "Health",
     "isComplete": false,
     "title": "Yoga Class",
-    "description": "Join the intermediate Vinyasa flow class at the local community center.\nFocus on breathing techniques and improving flexibility in the hamstrings and back.\nStay for the ten-minute guided meditation session at the end of the physical practice.",
-    "dueDate": "01/06/2026",
+    "description": "Join the intermediate Vinyasa flow class at the local community centre.\nFocus on breathing techniques and improving flexibility in the hamstrings and back.\nStay for the ten-minute guided meditation session at the end of the physical practice.",
+    "dueDate": "2026-01-06",
     "estimatedMinutes": 70,
-    "tags": ["Fitness", "Mental-Health"]
+    "tags": ["Fitness", "Wellness", "Mental-Health", "Self-Care", "Routine"]
   },
   {
     "id": 18,
@@ -175,9 +175,9 @@
     "isComplete": true,
     "title": "Staff Meeting",
     "description": "Attend the weekly sync-up to discuss the progress of the current marketing campaign.\nPresent the findings from the A/B testing performed on the landing page last week.\nTake notes on the upcoming deadlines for the holiday sales push.",
-    "dueDate": "01/05/2026",
+    "dueDate": "2026-01-05",
     "estimatedMinutes": 60,
-    "tags": ["Meeting", "Team"]
+    "tags": ["Team", "Communication", "Work", "Marketing", "Planning"]
   },
   {
     "id": 19,
@@ -185,9 +185,9 @@
     "isComplete": false,
     "title": "Gardening",
     "description": "Trim the dead branches from the rose bushes to encourage new growth in the spring.\nApply a layer of organic mulch to the flower beds to protect against the frost.\nClear out the weeds from the vegetable patch and prepare the soil for planting.",
-    "dueDate": "01/11/2026",
+    "dueDate": "2026-01-11",
     "estimatedMinutes": 100,
-    "tags": ["Outdoors", "Home"]
+    "tags": ["Maintenance", "Home", "Outdoors", "Nature", "DIY"]
   },
   {
     "id": 20,
@@ -195,19 +195,19 @@
     "isComplete": false,
     "title": "Renew Passport",
     "description": "Download and print the DS-82 renewal form from the official government website.\nGo to the local pharmacy to have professional passport photos taken and printed.\nMail the application via certified mail with the required fee and the old passport book.",
-    "dueDate": "01/30/2026",
+    "dueDate": "2026-01-30",
     "estimatedMinutes": 40,
-    "tags": ["Travel", "Admin", "Urgent"]
+    "tags": ["Travel", "Admin", "Urgent", "Planning", "Legal"]
   },
   {
     "id": 21,
     "category": "Work",
     "isComplete": false,
     "title": "Fix UI Bugs",
-    "description": "Identify the cause of the alignment issue on the mobile navigation bar.\nFix the color contrast on the primary call-to-action buttons for accessibility.\nTest the fixes across Chrome, Safari, and Firefox browsers.",
-    "dueDate": "01/18/2026",
+    "description": "Identify the cause of the alignment issue on the mobile navigation bar.\nFix the colour contrast on the primary call-to-action buttons for accessibility.\nTest the fixes across Chrome, Safari, and Firefox browsers.",
+    "dueDate": "2026-01-18",
     "estimatedMinutes": 120,
-    "tags": ["Development", "Design", "QA"]
+    "tags": ["Development", "Design", "Quality", "Tech", "Work"]
   },
   {
     "id": 22,
@@ -215,9 +215,9 @@
     "isComplete": false,
     "title": "Eye Exam",
     "description": "Visit the optometrist to check the current prescription for contact lenses.\nBrowse the new selection of frames for a backup pair of glasses.\nDiscuss the digital eye strain symptoms experienced during long work days.",
-    "dueDate": "02/05/2026",
+    "dueDate": "2026-02-05",
     "estimatedMinutes": 45,
-    "tags": ["Medical", "Vision"]
+    "tags": ["Medical", "Health", "Vision", "Self-Care", "Work"]
   },
   {
     "id": 23,
@@ -225,9 +225,9 @@
     "isComplete": true,
     "title": "Wash Windows",
     "description": "Clean the exterior and interior glass surfaces of all living room windows.\nUse a squeegee and microfiber cloth to ensure a streak-free finish.\nWipe down the sills and frames to remove accumulated dust and pollen.",
-    "dueDate": "01/03/2026",
+    "dueDate": "2026-01-03",
     "estimatedMinutes": 75,
-    "tags": ["Cleaning", "Home"]
+    "tags": ["Cleaning", "Home", "Maintenance", "Routine", "Self-Care"]
   },
   {
     "id": 24,
@@ -235,19 +235,19 @@
     "isComplete": false,
     "title": "Learn Guitar",
     "description": "Practice the basic open chords: G, C, D, and Em for thirty minutes.\nWork on the transition speed between the C major and G major shapes.\nWatch a tutorial on basic strumming patterns for folk music.",
-    "dueDate": "01/22/2026",
+    "dueDate": "2026-01-22",
     "estimatedMinutes": 45,
-    "tags": ["Hobby", "Music", "Creative"]
+    "tags": ["Education", "Creative", "Hobby", "Music", "Self-Improvement"]
   },
   {
     "id": 25,
     "category": "Work",
     "isComplete": false,
     "title": "Write Blog Post",
-    "description": "Draft a 1,000-word article on the benefits of serverless architecture.\nInclude code snippets demonstrating a basic AWS Lambda function setup.\nOptimize the headings and metadata for search engine performance.",
-    "dueDate": "01/25/2026",
+    "description": "Draft a 1,000-word article on the benefits of serverless architecture.\nInclude code snippets demonstrating a basic AWS Lambda function setup.\nOptimise the headings and metadata for search engine performance.",
+    "dueDate": "2026-01-25",
     "estimatedMinutes": 150,
-    "tags": ["Content", "Marketing", "Tech"]
+    "tags": ["Marketing", "Development", "Content", "Tech", "Work"]
   },
   {
     "id": 26,
@@ -255,19 +255,19 @@
     "isComplete": false,
     "title": "Hiking Trip",
     "description": "Pack a day bag with water, protein bars, and a basic first aid kit.\nDrive to the Blue Ridge trailhead for a six-mile loop through the forest.\nWear moisture-wicking layers and broken-in hiking boots for comfort.",
-    "dueDate": "01/17/2026",
+    "dueDate": "2026-01-17",
     "estimatedMinutes": 240,
-    "tags": ["Fitness", "Nature", "Outdoors"]
+    "tags": ["Fitness", "Travel", "Nature", "Outdoors", "Wellness", "Health"]
   },
   {
     "id": 27,
     "category": "Chores",
     "isComplete": false,
-    "title": "Organize Pantry",
+    "title": "Organise Pantry",
     "description": "Check the expiration dates on all canned goods and dry pantry items.\nGroup similar items together in clear storage bins for better visibility.\nCreate a list of staples that need to be replenished during the next grocery run.",
-    "dueDate": "01/28/2026",
+    "dueDate": "2026-01-28",
     "estimatedMinutes": 60,
-    "tags": ["Kitchen", "Organization"]
+    "tags": ["Home", "Organisation", "Cleaning", "Kitchen", "Planning"]
   },
   {
     "id": 28,
@@ -275,9 +275,9 @@
     "isComplete": true,
     "title": "Family Photos",
     "description": "Upload the digital photos from the holiday season to a cloud storage service.\nSelect the best ten shots to be printed and framed for the hallway gallery.\nOrder a custom photo book as a gift for the grandparents' anniversary.",
-    "dueDate": "01/10/2026",
+    "dueDate": "2026-01-10",
     "estimatedMinutes": 90,
-    "tags": ["Memories", "Family"]
+    "tags": ["Family", "Creative", "Memories", "Admin", "Digital"]
   },
   {
     "id": 29,
@@ -285,9 +285,9 @@
     "isComplete": false,
     "title": "Database Backup",
     "description": "Run a manual backup of the production database before the scheduled maintenance.\nVerify the integrity of the backup file by restoring it to a staging environment.\nUpdate the internal documentation with the latest backup timestamps.",
-    "dueDate": "01/19/2026",
+    "dueDate": "2026-01-19",
     "estimatedMinutes": 30,
-    "tags": ["Security", "Data", "Maintenance"]
+    "tags": ["Maintenance", "Admin", "Data", "Security", "Work"]
   },
   {
     "id": 30,
@@ -295,9 +295,9 @@
     "isComplete": false,
     "title": "Meditation",
     "description": "Spend fifteen minutes in a quiet space practicing mindful breathing techniques.\nUse a guided meditation app to focus on reducing stress and mental clutter.\nRecord a few sentences in a journal about the current state of mind afterward.",
-    "dueDate": "01/16/2026",
+    "dueDate": "2026-01-16",
     "estimatedMinutes": 20,
-    "tags": ["Wellness", "Mental-Health"]
+    "tags": ["Wellness", "Mental-Health", "Self-Care", "Routine", "Health"]
   },
   {
     "id": 31,
@@ -305,19 +305,19 @@
     "isComplete": false,
     "title": "Car Wash",
     "description": "Vacuum the interior carpets and wipe down the dashboard and door panels.\nWash the exterior with a high-quality soap and dry with a chamois cloth.\nApply a coat of protective wax to the paint to prevent winter salt damage.",
-    "dueDate": "01/21/2026",
+    "dueDate": "2026-01-21",
     "estimatedMinutes": 60,
-    "tags": ["Car", "Maintenance"]
+    "tags": ["Maintenance", "Car", "Cleaning", "Home", "Routine"]
   },
   {
     "id": 32,
     "category": "Personal",
     "isComplete": false,
     "title": "Paint Bedroom",
-    "description": "Move all furniture to the center of the room and cover with drop cloths.\nPatch any small holes in the drywall and sand them down for a smooth finish.\nApply two coats of 'Midnight Blue' paint to the main accent wall.",
-    "dueDate": "02/10/2026",
+    "description": "Move all furniture to the centre of the room and cover with drop cloths.\nPatch any small holes in the drywall and sand them down for a smooth finish.\nApply two coats of 'Midnight Blue' paint to the main accent wall.",
+    "dueDate": "2026-02-10",
     "estimatedMinutes": 300,
-    "tags": ["DIY", "Home"]
+    "tags": ["DIY", "Home", "Creative", "Maintenance", "Repair"]
   },
   {
     "id": 33,
@@ -325,9 +325,9 @@
     "isComplete": true,
     "title": "Design Sprint",
     "description": "Collaborate with the UX team to prototype the new user onboarding flow.\nConduct three rapid user testing sessions to identify friction points.\nIterate on the wireframes based on the feedback received from the participants.",
-    "dueDate": "01/12/2026",
+    "dueDate": "2026-01-12",
     "estimatedMinutes": 240,
-    "tags": ["Design", "UX", "Product"]
+    "tags": ["Design", "Team", "Development", "Product", "Communication", "Work"]
   },
   {
     "id": 34,
@@ -335,9 +335,9 @@
     "isComplete": false,
     "title": "Blood Work",
     "description": "Fast for twelve hours prior to the laboratory appointment for accurate results.\nProvide samples for a full metabolic panel and cholesterol check.\nReview the results with the primary care physician during the next visit.",
-    "dueDate": "01/24/2026",
+    "dueDate": "2026-01-24",
     "estimatedMinutes": 45,
-    "tags": ["Medical", "Labs"]
+    "tags": ["Medical", "Health", "Labs", "Self-Care", "Planning"]
   },
   {
     "id": 35,
@@ -345,9 +345,9 @@
     "isComplete": false,
     "title": "Shovel Snow",
     "description": "Clear the accumulated snow from the driveway and the front sidewalk.\nApply a layer of rock salt to prevent ice from forming on the walking paths.\nClear the area around the mailbox to ensure the mail carrier has easy access.",
-    "dueDate": "01/17/2026",
+    "dueDate": "2026-01-17",
     "estimatedMinutes": 45,
-    "tags": ["Winter", "Home", "Outdoors"]
+    "tags": ["Maintenance", "Home", "Outdoors", "Urgent", "Routine"]
   },
   {
     "id": 36,
@@ -355,29 +355,29 @@
     "isComplete": false,
     "title": "Volunteer",
     "description": "Spend four hours at the local food bank sorting through donated canned goods.\nPack boxes with essential items for distribution to families in the community.\nHelp clean the warehouse floor at the end of the volunteer shift.",
-    "dueDate": "01/31/2026",
+    "dueDate": "2026-01-31",
     "estimatedMinutes": 240,
-    "tags": ["Community", "Social"]
+    "tags": ["Social", "Community", "Self-Care", "Charity", "Communication"]
   },
   {
     "id": 37,
     "category": "Work",
     "isComplete": false,
     "title": "Security Audit",
-    "description": "Review the access logs for the main server to look for unauthorized entry attempts.\nUpdate all administrative passwords to meet the new complexity requirements.\nEnsure that the SSL certificates for all subdomains are valid and up to date.",
-    "dueDate": "02/01/2026",
+    "description": "Review the access logs for the main server to look for unauthorised entry attempts.\nUpdate all administrative passwords to meet the new complexity requirements.\nEnsure that the SSL certificates for all subdomains are valid and up to date.",
+    "dueDate": "2026-02-01",
     "estimatedMinutes": 120,
-    "tags": ["Security", "Tech", "IT"]
+    "tags": ["Maintenance", "Admin", "Security", "Tech", "Work", "Quality"]
   },
   {
     "id": 38,
     "category": "Health",
     "isComplete": true,
     "title": "Swimming",
-    "description": "Visit the local aquatic center for a thirty-minute lap swimming session.\nFocus on improving the freestyle stroke and bilateral breathing technique.\nComplete four sets of five-minute intervals at a high intensity.",
-    "dueDate": "01/09/2026",
+    "description": "Visit the local aquatic centre for a thirty-minute lap swimming session.\nFocus on improving the freestyle stroke and bilateral breathing technique.\nComplete four sets of five-minute intervals at a high intensity.",
+    "dueDate": "2026-01-09",
     "estimatedMinutes": 60,
-    "tags": ["Fitness", "Cardio"]
+    "tags": ["Fitness", "Health", "Self-Care", "Cardio", "Routine"]
   },
   {
     "id": 39,
@@ -385,29 +385,29 @@
     "isComplete": false,
     "title": "Dust Bookshelves",
     "description": "Remove all books from the shelves and wipe down the surfaces with wood polish.\nSort the books by genre or author before replacing them on the shelves.\nIdentify any titles that can be donated to the local library branch.",
-    "dueDate": "01/29/2026",
+    "dueDate": "2026-01-29",
     "estimatedMinutes": 90,
-    "tags": ["Cleaning", "Organization"]
+    "tags": ["Cleaning", "Home", "Organisation", "Routine", "Education"]
   },
   {
     "id": 40,
     "category": "Personal",
     "isComplete": false,
     "title": "Pottery Class",
-    "description": "Attend a two-hour workshop focusing on the basics of wheel-throwing techniques.\nPractice centering the clay and pulling up the walls to create a simple bowl.\nSelect a glaze color for the pieces that will be fired in the kiln next week.",
-    "dueDate": "02/02/2026",
+    "description": "Attend a two-hour workshop focusing on the basics of wheel-throwing techniques.\nPractice centering the clay and pulling up the walls to create a simple bowl.\nSelect a glaze colour for the pieces that will be fired in the kiln next week.",
+    "dueDate": "2026-02-02",
     "estimatedMinutes": 150,
-    "tags": ["Hobby", "Creative", "Art"]
+    "tags": ["Creative", "Education", "Hobby", "Art", "Self-Improvement"]
   },
   {
     "id": 41,
     "category": "Work",
     "isComplete": false,
     "title": "Market Research",
-    "description": "Analyze the competitor's latest product release and identify key features.\nGather user feedback from social media and forums regarding the new trends.\nSummarize the findings in a three-page report for the product development team.",
-    "dueDate": "02/08/2026",
+    "description": "Analyse the competitor's latest product release and identify key features.\nGather user feedback from social media and forums regarding the new trends.\nSummarise the findings in a three-page report for the product development team.",
+    "dueDate": "2026-02-08",
     "estimatedMinutes": 180,
-    "tags": ["Research", "Business", "Product"]
+    "tags": ["Marketing", "Admin", "Research", "Work", "Communication"]
   },
   {
     "id": 42,
@@ -415,39 +415,39 @@
     "isComplete": false,
     "title": "Skin Check",
     "description": "Visit the dermatologist for a full-body screening of moles and freckles.\nDiscuss any changes in skin texture or appearance noticed over the last year.\nGet recommendations for a daily sunscreen routine for the upcoming summer.",
-    "dueDate": "02/15/2026",
+    "dueDate": "2026-02-15",
     "estimatedMinutes": 30,
-    "tags": ["Medical", "Skincare"]
+    "tags": ["Medical", "Wellness", "Health", "Self-Care", "Prevention"]
   },
   {
     "id": 43,
     "category": "Chores",
     "isComplete": true,
     "title": "Clean Oven",
-    "description": "Apply a specialized oven cleaner to the interior surfaces and let it sit for two hours.\nScrub away the burnt-on grease and food particles with a heavy-duty sponge.\nWipe down the exterior glass and handles with a degreasing agent.",
-    "dueDate": "01/06/2026",
+    "description": "Apply a specialised oven cleaner to the interior surfaces and let it sit for two hours.\nScrub away the burnt-on grease and food particles with a heavy-duty sponge.\nWipe down the exterior glass and handles with a degreasing agent.",
+    "dueDate": "2026-01-06",
     "estimatedMinutes": 150,
-    "tags": ["Kitchen", "Cleaning"]
+    "tags": ["Cleaning", "Home", "Kitchen", "Maintenance", "Routine"]
   },
   {
     "id": 44,
     "category": "Personal",
     "isComplete": false,
     "title": "Backup Laptop",
-    "description": "Connect the external hard drive and run a full system image backup.\nCopy essential documents and photos to a secondary cloud storage provider.\nOrganize the 'Downloads' folder and delete any unnecessary large files.",
-    "dueDate": "01/23/2026",
+    "description": "Connect the external hard drive and run a full system image backup.\nCopy essential documents and photos to a secondary cloud storage provider.\nOrganise the 'Downloads' folder and delete any unnecessary large files.",
+    "dueDate": "2026-01-23",
     "estimatedMinutes": 60,
-    "tags": ["Tech", "Organization"]
+    "tags": ["Maintenance", "Admin", "Tech", "Security", "Organisation", "Digital"]
   },
   {
     "id": 45,
     "category": "Work",
     "isComplete": false,
     "title": "Refactor API",
-    "description": "Identify the endpoints that are experiencing high latency and optimize the queries.\nImplement a caching layer for the most frequently accessed data objects.\nUpdate the API documentation to reflect the changes in the response structure.",
-    "dueDate": "02/12/2026",
+    "description": "Identify the endpoints that are experiencing high latency and optimise the queries.\nImplement a caching layer for the most frequently accessed data objects.\nUpdate the API documentation to reflect the changes in the response structure.",
+    "dueDate": "2026-02-12",
     "estimatedMinutes": 240,
-    "tags": ["Development", "Backend", "Optimization"]
+    "tags": ["Development", "Tech", "Work", "Quality", "Optimisation", "Backend"]
   },
   {
     "id": 46,
@@ -455,9 +455,9 @@
     "isComplete": false,
     "title": "Sleep Hygiene",
     "description": "Establish a consistent bedtime routine that includes turning off screens an hour early.\nInvest in a set of blackout curtains to improve the quality of deep sleep.\nTrack sleep patterns for a week using a wearable device or a mobile app.",
-    "dueDate": "01/19/2026",
+    "dueDate": "2026-01-19",
     "estimatedMinutes": 20,
-    "tags": ["Wellness", "Health"]
+    "tags": ["Wellness", "Self-Care", "Health", "Routine", "Lifestyle"]
   },
   {
     "id": 47,
@@ -465,9 +465,9 @@
     "isComplete": false,
     "title": "Service HVAC",
     "description": "Schedule an appointment with a technician to inspect the furnace and AC unit.\nReplace the air filters with high-efficiency pleated models for better air quality.\nVacuum out the dust from the vents and registers throughout the house.",
-    "dueDate": "02/20/2026",
+    "dueDate": "2026-02-20",
     "estimatedMinutes": 90,
-    "tags": ["Home", "Maintenance"]
+    "tags": ["Maintenance", "Home", "Repair", "Health", "Planning"]
   },
   {
     "id": 48,
@@ -475,9 +475,9 @@
     "isComplete": true,
     "title": "Visit Museum",
     "description": "Spend the afternoon at the Modern Art Museum exploring the new photography exhibit.\nAttend a short lecture on the influence of digital technology on contemporary art.\nPurchase a print from the gift shop for the living room gallery wall.",
-    "dueDate": "01/11/2026",
+    "dueDate": "2026-01-11",
     "estimatedMinutes": 180,
-    "tags": ["Culture", "Art", "Leisure"]
+    "tags": ["Creative", "Travel", "Culture", "Art", "Education", "Leisure"]
   },
   {
     "id": 49,
@@ -485,9 +485,9 @@
     "isComplete": false,
     "title": "Onboard New Hire",
     "description": "Set up the new developer's workstation and install all necessary software tools.\nConduct a walkthrough of the codebase and the current sprint objectives.\nIntroduce the new team member to the key stakeholders during the afternoon coffee break.",
-    "dueDate": "02/03/2026",
+    "dueDate": "2026-02-03",
     "estimatedMinutes": 120,
-    "tags": ["Team", "HR", "Management"]
+    "tags": ["Team", "Admin", "Work", "HR", "Management", "Communication"]
   },
   {
     "id": 50,
@@ -495,8 +495,8 @@
     "isComplete": false,
     "title": "Fruit Intake",
     "description": "Prepare a large bowl of seasonal fruit salad to keep in the refrigerator for snacks.\nIncorporate at least two servings of berries or citrus into the daily breakfast.\nResearch the benefits of different antioxidant-rich fruits for general health.",
-    "dueDate": "01/16/2026",
+    "dueDate": "2026-01-16",
     "estimatedMinutes": 30,
-    "tags": ["Nutrition", "Health"]
+    "tags": ["Nutrition", "Self-Care", "Health", "Wellness", "Routine"]
   }
 ]
