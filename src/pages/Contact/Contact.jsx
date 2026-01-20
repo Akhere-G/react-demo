@@ -11,6 +11,11 @@ export default function Contact(){
         email: "",
         message: ""
     })
+    const [touched, setTouched] = useState({
+        name: false,
+        email: false,
+        message: false
+    })
 
     function validate(formState){
         const { name, email, message } = formState
@@ -38,15 +43,18 @@ export default function Contact(){
         } else if (message.trim().length > 300) {
             errorMessages.message = "Message must be less than 300 characters"
         }
-
-        setErrorMessages(errorMessages)
-
-        return Object.values(errorMessages).some(value => value !== "")
+        return errorMessages;
     }
 
     function handleSubmit(e){
         e.preventDefault()
-        const hasErrors = validate(formState)
+
+        setTouched({ name: true, email: true, message: true })
+        const errorMessages = validate(formState)
+        const hasErrors = Object.values(errorMessages).some(value => value !== "")
+
+        setErrorMessages(errorMessages)
+
         if (hasErrors){
             return
         }
@@ -55,13 +63,25 @@ export default function Contact(){
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formState)
         })
+        setFormState({
+            name: "",
+            email: "",
+            message: ""
+        })
         alert("Message successfully sent")
     }
 
     function handleChange(e) {
         const newFormState = { ...formState, [e.target.name]: e.target.value }
         setFormState(newFormState)
-        validate(newFormState)
+        const errorMessages = validate(newFormState)
+        setErrorMessages(errorMessages)
+    }
+
+    function handleBlur(e){
+        const newTouched = {...touched, [e.target.name]: true }
+        setErrorMessages(validate(formState))
+        setTouched(newTouched)
     }
 
     return (
@@ -73,8 +93,9 @@ export default function Contact(){
                 name="name"
                 value={formState.name} 
                 onChange={handleChange} 
+                onBlur={handleBlur}
             />
-           {errorMessages.name && <p className="errorMessage">{errorMessages.name}</p>}
+           {errorMessages.name && touched.name && <p className="errorMessage">{errorMessages.name}</p>}
             
             <label>Email</label>
             <input 
@@ -82,16 +103,18 @@ export default function Contact(){
                 type="email" 
                 value={formState.email} 
                 onChange={handleChange} 
+                onBlur={handleBlur}
             />
-            {errorMessages.email && <p className="errorMessage">{errorMessages.email}</p>}
+            {errorMessages.email && touched.email && <p className="errorMessage">{errorMessages.email}</p>}
 
             <label>Message</label>
             <input
                 name="message" 
                 value={formState.message} 
-                onChange={handleChange} 
+                onChange={handleChange}
+                onBlur={handleBlur}
             />
-            {errorMessages.message && <p className="errorMessage">{errorMessages.message}</p>}
+            {errorMessages.message && touched.message && <p className="errorMessage">{errorMessages.message}</p>}
             
             <button onClick={handleSubmit}>Send Query</button>
         </form>
