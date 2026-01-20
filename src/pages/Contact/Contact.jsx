@@ -1,13 +1,9 @@
 import { useState } from "react"
 import "./Contact.css"
-import InputField from "../../components/InputField"
-
 export default function Contact(){
-    const [formState, setFormState] = useState({
-        name: "",
-        email: "", 
-        message: ""
-    })
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
     const [errorMessages, setErrorMessages] = useState({
         name: "",
         email: "",
@@ -15,89 +11,84 @@ export default function Contact(){
     })
 
     function validate({ name, email, message }){
-        let errors = {
+        const errorMessages = {
             name: "",
             email: "",
             message: ""
         }
-
-        if (name.trim().length < 3){
-            errors.name = "Name is too short"
+        if (name.trim().length === 0){
+            errorMessages.name = "Name is required"
+        } else if (name.trim().length > 30) {
+            errorMessages.name = "Name must be less than 30 characters"
         }
-        if (name.length > 30){
-            errors.name = "Name is too long"
-        } 
-        if (email.trim().length < 3){
-            errors.email = "email is too short"
-        }
-        if (email.length > 30){
-            errors.email = "email is too long"
-        } 
-        if (message.trim().length < 3){
-            errors.message = "Message is too short"
-        }
-        if (message.length > 30){
-            errors.message = "Message is too long"
-        } 
-        setErrorMessages(errors) 
 
-        return Object.values(errors).join("") !== ""
+        if (email.trim().length === 0){
+            errorMessages.email = "Email is required"
+        } else if (email.trim().length > 30) {
+            errorMessages.email = "Email must be less than 30 characters"
+        } else if (!email.includes("@")){
+            errorMessages.email = "Email must be in the corrcet format"
+        }
 
+         if (message.trim().length === 0){
+            errorMessages.message = "Message is required"
+        } else if (message.trim().length > 300) {
+            errorMessages.message = "Message must be less than 300 characters"
+        }
+
+        setErrorMessages(errorMessages)
+
+        return Object.values(errorMessages).some(value => value !== "")
     }
-
     function handleSubmit(e){
         e.preventDefault()
-        if (validate(formState)){
+        const hasErrors = validate({name,email, message})
+        if (hasErrors){
             return
         }
-
-        fetch("http://localhost:5000/contact", {
+        fetch("http://localhost/contact",{
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formState)
+            body: JSON.stringify({ name, message, email })
         })
-
-        setFormState({
-            name: "",
-            email: "", 
-            message: ""
-        })
-        alert("Success")
-    }
-
-    function handleChange(e) {
-        const newState = {...formState, [e.target.name] : e.target.value }
-        setFormState(newState)
-        validate(newState)
+        alert("Message successfully sent")
     }
 
     return (
     <div>
-        <h1>Contact</h1>
-        <form className="form" >
-            <InputField 
-                title="name" 
-                value={formState.name} 
-                name="name" 
-                handleChange={handleChange} 
-                errorMessage={errorMessages.name} 
+        <p>Contact</p>
+        <form className="form">
+            <label>Name</label>
+            <input 
+                value={name} 
+                onChange={e => {
+                    setName(e.target.value);
+                    validate({ name: e.target.value, email, message })
+                }} 
             />
-            <InputField 
-                title="Email" 
-                value={formState.email} 
-                name="email" 
-                handleChange={handleChange} 
-                errorMessage={errorMessages.email} 
-            />
-            <InputField 
-                title="Message" 
-                value={formState.message} 
-                name="message" 
-                handleChange={handleChange} 
-                errorMessage={errorMessages.message} 
-            />
-            <button onClick={handleSubmit}>Send Query</button>
+           {errorMessages.name && <p className="errorMessage">{errorMessages.name}</p>}
             
+            <label>Email</label>
+            <input 
+                type="email" 
+                value={email} 
+                onChange={e => {
+                    setEmail(e.target.value)
+                    validate({ name, email: e.target.value, message })
+                    }} />
+            {errorMessages.email && <p className="errorMessage">{errorMessages.email}</p>}
+
+            <label>Message</label>
+            <input 
+                value={message} 
+                onChange={e => {
+                    setMessage(e.target.value)
+                    validate({ name, email, message: e.target.value })
+                }} 
+                />
+            {errorMessages.message && <p className="errorMessage">{errorMessages.message}</p>}
+            
+            <button onClick={handleSubmit}>Send Query</button>
         </form>
     </div>
     )
