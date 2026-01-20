@@ -12,12 +12,6 @@ export default function Contact(){
         message: ""
     })
 
-    function updateFormState(field, value){{
-        setFormState(prevState => 
-            ({...prevState, [field]: value}))
-        }   
-    }
-
     function validate(formState){
         const { name, email, message } = formState
         const errorMessages = {
@@ -49,6 +43,7 @@ export default function Contact(){
 
         return Object.values(errorMessages).some(value => value !== "")
     }
+
     function handleSubmit(e){
         e.preventDefault()
         const hasErrors = validate(formState)
@@ -63,38 +58,39 @@ export default function Contact(){
         alert("Message successfully sent")
     }
 
+    function handleChange(e) {
+        const newFormState = { ...formState, [e.target.name]: e.target.value }
+        setFormState(newFormState)
+        validate(newFormState)
+    }
+
     return (
     <div>
         <p>Contact</p>
         <form className="form">
             <label>Name</label>
             <input 
+                name="name"
                 value={formState.name} 
-                onChange={e => {
-                    updateFormState("name", e.target.value);
-                    validate({ ...formState, name: e.target.value,  })
-                }} 
+                onChange={handleChange} 
             />
            {errorMessages.name && <p className="errorMessage">{errorMessages.name}</p>}
             
             <label>Email</label>
             <input 
+                name="email"
                 type="email" 
                 value={formState.email} 
-                onChange={e => {
-                    updateFormState("email", e.target.value);
-                    validate({ ...formState, email: e.target.value })
-                    }} />
+                onChange={handleChange} 
+            />
             {errorMessages.email && <p className="errorMessage">{errorMessages.email}</p>}
 
             <label>Message</label>
-            <input 
+            <input
+                name="message" 
                 value={formState.message} 
-                onChange={e => {
-                    updateFormState("message", e.target.value);
-                    validate({ ...formState, message: e.target.value })
-                }} 
-                />
+                onChange={handleChange} 
+            />
             {errorMessages.message && <p className="errorMessage">{errorMessages.message}</p>}
             
             <button onClick={handleSubmit}>Send Query</button>
