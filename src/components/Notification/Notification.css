@@ -1,0 +1,23 @@
+.notification {
+  position: absolute;
+  padding: 1rem;
+  width: 80%;
+  top: 5rem;
+  left: 1rem;
+}
+
+.default {
+  background-color: #ddd;
+}
+
+.error {
+  background-color: #fdd;
+  color: #500;
+  border-left: solid 4px #500;
+}
+
+.success {
+  background-color: #dfd;
+  color: #050;
+  border-left: solid 4px #050;
+}
