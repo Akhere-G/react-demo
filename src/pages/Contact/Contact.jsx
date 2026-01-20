@@ -1,16 +1,25 @@
 import { useState } from "react"
 import "./Contact.css"
 export default function Contact(){
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [message, setMessage] = useState("")
+    const [formState, setFormState] = useState({
+        name: "",
+        email: "",
+        message: ""
+    })
     const [errorMessages, setErrorMessages] = useState({
         name: "",
         email: "",
         message: ""
     })
 
-    function validate({ name, email, message }){
+    function updateFormState(field, value){{
+        setFormState(prevState => 
+            ({...prevState, [field]: value}))
+        }   
+    }
+
+    function validate(formState){
+        const { name, email, message } = formState
         const errorMessages = {
             name: "",
             email: "",
@@ -42,14 +51,14 @@ export default function Contact(){
     }
     function handleSubmit(e){
         e.preventDefault()
-        const hasErrors = validate({name,email, message})
+        const hasErrors = validate(formState)
         if (hasErrors){
             return
         }
         fetch("http://localhost/contact",{
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name, message, email })
+            body: JSON.stringify(formState)
         })
         alert("Message successfully sent")
     }
@@ -60,10 +69,10 @@ export default function Contact(){
         <form className="form">
             <label>Name</label>
             <input 
-                value={name} 
+                value={formState.name} 
                 onChange={e => {
-                    setName(e.target.value);
-                    validate({ name: e.target.value, email, message })
+                    updateFormState("name", e.target.value);
+                    validate({ ...formState, name: e.target.value,  })
                 }} 
             />
            {errorMessages.name && <p className="errorMessage">{errorMessages.name}</p>}
@@ -71,19 +80,19 @@ export default function Contact(){
             <label>Email</label>
             <input 
                 type="email" 
-                value={email} 
+                value={formState.email} 
                 onChange={e => {
-                    setEmail(e.target.value)
-                    validate({ name, email: e.target.value, message })
+                    updateFormState("email", e.target.value);
+                    validate({ ...formState, email: e.target.value })
                     }} />
             {errorMessages.email && <p className="errorMessage">{errorMessages.email}</p>}
 
             <label>Message</label>
             <input 
-                value={message} 
+                value={formState.message} 
                 onChange={e => {
-                    setMessage(e.target.value)
-                    validate({ name, email, message: e.target.value })
+                    updateFormState("message", e.target.value);
+                    validate({ ...formState, message: e.target.value })
                 }} 
                 />
             {errorMessages.message && <p className="errorMessage">{errorMessages.message}</p>}
