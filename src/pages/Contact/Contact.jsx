@@ -38,15 +38,16 @@ export default function Contact(){
         } else if (message.trim().length > 300) {
             errorMessages.message = "Message must be less than 300 characters"
         }
-
-        setErrorMessages(errorMessages)
-
-        return Object.values(errorMessages).some(value => value !== "")
+        return errorMessages;
     }
 
     function handleSubmit(e){
         e.preventDefault()
-        const hasErrors = validate(formState)
+        const errorMessages = validate(formState)
+        const hasErrors = Object.values(errorMessages).some(value => value !== "")
+
+        setErrorMessages(errorMessages)
+
         if (hasErrors){
             return
         }
@@ -61,7 +62,8 @@ export default function Contact(){
     function handleChange(e) {
         const newFormState = { ...formState, [e.target.name]: e.target.value }
         setFormState(newFormState)
-        validate(newFormState)
+        const errorMessages = validate(newFormState)
+        setErrorMessages(errorMessages)
     }
 
     return (
