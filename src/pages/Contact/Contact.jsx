@@ -61,17 +61,21 @@ export default function Contact(){
         if (hasErrors){
             return
         }
-        fetch("http://localhost/contact",{
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formState)
-        })
-        setFormState({
-            name: "",
-            email: "",
-            message: ""
-        })
-        addNotification("Message successfully sent", "success", 1000)
+            fetch("http://localhost/contact",{
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formState)
+            })
+            .then(() => {
+                setFormState({
+                    name: "",
+                    email: "",
+                    message: ""
+                })
+                addNotification("Message successfully sent", "success", 1000)
+            }).catch(() => {
+                addNotification("Could not send message", "error", 1000)
+            })
     }
 
     function handleChange(e) {
