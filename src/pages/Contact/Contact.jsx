@@ -1,5 +1,7 @@
 import { useState } from "react"
 import "./Contact.css"
+import useNotification from "../../components/Notification/useNotification"
+import Notification from "../../components/Notification/Notification"
 export default function Contact(){
     const [formState, setFormState] = useState({
         name: "",
@@ -11,7 +13,13 @@ export default function Contact(){
         email: "",
         message: ""
     })
-
+    const [touched, setTouched] = useState({
+        name: false,
+        email: false,
+        message: false
+    })
+    const { addNotification, notification } = useNotification()
+            
     function validate(formState){
         const { name, email, message } = formState
         const errorMessages = {
@@ -33,7 +41,7 @@ export default function Contact(){
             errorMessages.email = "Email must be in the corrcet format"
         }
 
-         if (message.trim().length === 0){
+        if (message.trim().length === 0){
             errorMessages.message = "Message is required"
         } else if (message.trim().length > 300) {
             errorMessages.message = "Message must be less than 300 characters"
@@ -43,6 +51,8 @@ export default function Contact(){
 
     function handleSubmit(e){
         e.preventDefault()
+
+        setTouched({ name: true, email: true, message: true })
         const errorMessages = validate(formState)
         const hasErrors = Object.values(errorMessages).some(value => value !== "")
 
@@ -51,12 +61,21 @@ export default function Contact(){
         if (hasErrors){
             return
         }
-        fetch("http://localhost/contact",{
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formState)
-        })
-        alert("Message successfully sent")
+            fetch("http://localhost/contact",{
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formState)
+            })
+            .then(() => {
+                setFormState({
+                    name: "",
+                    email: "",
+                    message: ""
+                })
+                addNotification("Message successfully sent", "success", 5000)
+            }).catch(() => {
+                addNotification("Could not send message", "error", 5000)
+            })
     }
 
     function handleChange(e) {
@@ -66,17 +85,25 @@ export default function Contact(){
         setErrorMessages(errorMessages)
     }
 
+    function handleBlur(e){
+        const newTouched = {...touched, [e.target.name]: true }
+        setErrorMessages(validate(formState))
+        setTouched(newTouched)
+    }
+
     return (
     <div>
         <p>Contact</p>
+        {notification && <Notification {...notification} />}
         <form className="form">
             <label>Name</label>
             <input 
                 name="name"
                 value={formState.name} 
                 onChange={handleChange} 
+                onBlur={handleBlur}
             />
-           {errorMessages.name && <p className="errorMessage">{errorMessages.name}</p>}
+            {errorMessages.name && touched.name && <p className="errorMessage">{errorMessages.name}</p>}
             
             <label>Email</label>
             <input 
@@ -84,16 +111,18 @@ export default function Contact(){
                 type="email" 
                 value={formState.email} 
                 onChange={handleChange} 
+                onBlur={handleBlur}
             />
-            {errorMessages.email && <p className="errorMessage">{errorMessages.email}</p>}
+            {errorMessages.email && touched.email && <p className="errorMessage">{errorMessages.email}</p>}
 
             <label>Message</label>
             <input
                 name="message" 
                 value={formState.message} 
-                onChange={handleChange} 
+                onChange={handleChange}
+                onBlur={handleBlur}
             />
-            {errorMessages.message && <p className="errorMessage">{errorMessages.message}</p>}
+            {errorMessages.message && touched.message && <p className="errorMessage">{errorMessages.message}</p>}
             
             <button onClick={handleSubmit}>Send Query</button>
         </form>
